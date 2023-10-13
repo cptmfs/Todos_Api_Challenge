@@ -1,0 +1,15 @@
+C:\Users\KAPTAN\source\repos\ConsoleApp1\ConsoleApp6\bin\Debug\net7.0\ConsoleApp6.exe
+C:\Users\KAPTAN\source\repos\ConsoleApp1\ConsoleApp6\bin\Debug\net7.0\ConsoleApp6.deps.json
+C:\Users\KAPTAN\source\repos\ConsoleApp1\ConsoleApp6\bin\Debug\net7.0\ConsoleApp6.runtimeconfig.json
+C:\Users\KAPTAN\source\repos\ConsoleApp1\ConsoleApp6\bin\Debug\net7.0\ConsoleApp6.dll
+C:\Users\KAPTAN\source\repos\ConsoleApp1\ConsoleApp6\bin\Debug\net7.0\ConsoleApp6.pdb
+C:\Users\KAPTAN\source\repos\ConsoleApp1\ConsoleApp6\obj\Debug\net7.0\ConsoleApp6.csproj.AssemblyReference.cache
+C:\Users\KAPTAN\source\repos\ConsoleApp1\ConsoleApp6\obj\Debug\net7.0\ConsoleApp6.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\KAPTAN\source\repos\ConsoleApp1\ConsoleApp6\obj\Debug\net7.0\ConsoleApp6.AssemblyInfoInputs.cache
+C:\Users\KAPTAN\source\repos\ConsoleApp1\ConsoleApp6\obj\Debug\net7.0\ConsoleApp6.AssemblyInfo.cs
+C:\Users\KAPTAN\source\repos\ConsoleApp1\ConsoleApp6\obj\Debug\net7.0\ConsoleApp6.csproj.CoreCompileInputs.cache
+C:\Users\KAPTAN\source\repos\ConsoleApp1\ConsoleApp6\obj\Debug\net7.0\ConsoleApp6.dll
+C:\Users\KAPTAN\source\repos\ConsoleApp1\ConsoleApp6\obj\Debug\net7.0\refint\ConsoleApp6.dll
+C:\Users\KAPTAN\source\repos\ConsoleApp1\ConsoleApp6\obj\Debug\net7.0\ConsoleApp6.pdb
+C:\Users\KAPTAN\source\repos\ConsoleApp1\ConsoleApp6\obj\Debug\net7.0\ConsoleApp6.genruntimeconfig.cache
+C:\Users\KAPTAN\source\repos\ConsoleApp1\ConsoleApp6\obj\Debug\net7.0\ref\ConsoleApp6.dll
