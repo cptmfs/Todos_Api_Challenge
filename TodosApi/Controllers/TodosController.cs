@@ -104,12 +104,10 @@ public class TodosController : Controller
         var content = new MultipartFormDataContent();
         content.Add(new StringContent(_code), "code");
 
-        // Dosyanızın yolu
         var filePath = @"C:\TodosApi.rar";
         var fileContent = new ByteArrayContent(await System.IO.File.ReadAllBytesAsync(filePath));
         fileContent.Headers.ContentType = new System.Net.Http.Headers.MediaTypeHeaderValue("multipart/form-data");
 
-        // Dosyanızın adı
         content.Add(fileContent, "file", "file.zip");
 
         request.Content = content;
