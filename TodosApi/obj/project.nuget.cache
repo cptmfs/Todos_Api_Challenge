@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "DLGGj+h7AXLafkkor+4ZLc5cPdKf4CoHp1NOqMCLGYDyz+tnmt5JUA+BAEi7BZlMHX7XoZIgMGUsOBja6Ij95w==",
+  "dgSpecHash": "bXSr8SvDC/QmVn9QdpK7XYV5iTyk2ze0Ak4vZrhxBbDR+L5LtRiJGLY2wZL8SQgHRkaeavEHEeHFMOIgk321HQ==",
   "success": true,
-  "projectFilePath": "C:\\Users\\KAPTAN\\source\\repos\\ConsoleApp1\\TodosApi\\TodosApi.csproj",
+  "projectFilePath": "C:\\Users\\KAPTAN\\Documents\\GitHub\\Todos_Api_Challenge\\TodosApi\\TodosApi.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\KAPTAN\\.nuget\\packages\\microsoft.aspnetcore.openapi\\7.0.9\\microsoft.aspnetcore.openapi.7.0.9.nupkg.sha512",
     "C:\\Users\\KAPTAN\\.nuget\\packages\\microsoft.extensions.apidescription.server\\6.0.5\\microsoft.extensions.apidescription.server.6.0.5.nupkg.sha512",

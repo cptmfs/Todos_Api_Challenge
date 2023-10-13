@@ -5,6 +5,7 @@ public class TodosController : Controller
 {
     private readonly string _apiBaseUrl = "https://challenge.photier.com";
     private readonly string _token = "afeaf6c673486ad7159a51eff511e2ed";
+    private static readonly HttpClient client = new HttpClient();
 
     [HttpGet("items")] // HELLO
     public IActionResult GetTodoItems()
@@ -90,89 +91,12 @@ public class TodosController : Controller
         }
     }
 
-    //[HttpPost("complete")]
-    //public IActionResult CompleteChallenge(string path_to_zip_file)
-    //{
-    //    using (var httpClient = new HttpClient())
-    //    {
-    //        httpClient.DefaultRequestHeaders.Authorization = new AuthenticationHeaderValue("Bearer", _token);
-
-    //        byte[] fileBytes = System.IO.File.ReadAllBytes(path_to_zip_file);
-
-    //        ByteArrayContent byteContent = new ByteArrayContent(fileBytes);
-
-    //        MultipartFormDataContent form = new MultipartFormDataContent();
-    //        form.Add(byteContent, "file", System.IO.Path.GetFileName(path_to_zip_file));
-
-    //        var response = httpClient.PostAsync($"{_apiBaseUrl}/complete", form).Result;
-
-    //        if (response.IsSuccessStatusCode)
-    //        {
-    //            string responseContent = response.Content.ReadAsStringAsync().Result;
-    //            return Ok(responseContent);
-    //        }
-    //        else
-    //        {
-    //            return BadRequest("Görev tamamlama isteği başarısız oldu. Hata kodu: " + (int)response.StatusCode);
-    //        }
-    //    }
-    //}
-
-    //[HttpPost("complete")]
-    //public IActionResult CompleteChallenge([FromForm] string code)
-    //{
-    //    // Dosya yolunu belirleyin
-    //    var filePath = @"C:\TodosApi.rar";
-
-    //    using (var httpClient = new HttpClient())
-    //    {
-    //        httpClient.DefaultRequestHeaders.Authorization = new AuthenticationHeaderValue("Bearer", _token);
-
-    //        using (var form = new MultipartFormDataContent())
-    //        {
-    //            // Add the code
-    //            var stringContent = new StringContent(code);
-    //            stringContent.Headers.ContentDisposition = new ContentDispositionHeaderValue("form-data")
-    //            {
-    //                Name = "code"
-    //            };
-    //            form.Add(stringContent);
-
-    //            // Dosyayı belirtilen yoldan açın
-    //            using (var fileStream = new FileStream(filePath, FileMode.Open))
-    //            {
-    //                // Add the zip file
-    //                var streamContent = new StreamContent(fileStream);
-    //                streamContent.Headers.ContentDisposition = new ContentDispositionHeaderValue("form-data")
-    //                {
-    //                    Name = "file",
-    //                    FileName = Path.GetFileName(filePath)
-    //                };
-    //                form.Add(streamContent);
-
-    //                var response = httpClient.PostAsync($"{_apiBaseUrl}/complete", form).Result;
-
-    //                if (response.IsSuccessStatusCode)
-    //                {
-    //                    string responseContent = response.Content.ReadAsStringAsync().Result;
-    //                    return Ok(responseContent);
-    //                }
-    //                else
-    //                {
-    //                    return BadRequest("Görev tamamlama isteği başarısız oldu. Hata kodu: " + (int)response.StatusCode);
-    //                }
-    //            }
-    //        }
-    //    }
-    //}
-    private static readonly HttpClient client = new HttpClient();
-
-    [HttpPost("complete")]
-    public async Task<IActionResult> CompleteChallenge()
+    [HttpPost("complete")] // MENEMEN
+    public async Task<IActionResult> CompleteChallenge([FromBody] string code)
     {
         var _apiBaseUrl = "https://challenge.photier.com";
         var _token = "afeaf6c673486ad7159a51eff511e2ed";
-        var _code = "RAMEN";
+        var _code = code;
 
         var request = new HttpRequestMessage(HttpMethod.Post, $"{_apiBaseUrl}/complete");
         request.Headers.Add("Authorization", $"Bearer {_token}");
@@ -181,7 +105,7 @@ public class TodosController : Controller
         content.Add(new StringContent(_code), "code");
 
         // Dosyanızın yolu
-        var filePath = @"C:\qq.rar";
+        var filePath = @"C:\TodosApi.rar";
         var fileContent = new ByteArrayContent(await System.IO.File.ReadAllBytesAsync(filePath));
         fileContent.Headers.ContentType = new System.Net.Http.Headers.MediaTypeHeaderValue("multipart/form-data");
 
@@ -201,16 +125,4 @@ public class TodosController : Controller
             return StatusCode((int)response.StatusCode);
         }
     }
-
-
-
-
-    [HttpPost("upload")]
-    public IActionResult Upload(IFormFile file)
-    {
-        return (IActionResult)Task.CompletedTask;
-    }
-
-
-
 }

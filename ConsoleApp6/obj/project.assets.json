@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\KAPTAN\\source\\repos\\ConsoleApp1\\ConsoleApp6\\ConsoleApp6.csproj",
+      "projectUniqueName": "C:\\Users\\KAPTAN\\Documents\\GitHub\\Todos_Api_Challenge\\ConsoleApp6\\ConsoleApp6.csproj",
       "projectName": "ConsoleApp6",
-      "projectPath": "C:\\Users\\KAPTAN\\source\\repos\\ConsoleApp1\\ConsoleApp6\\ConsoleApp6.csproj",
+      "projectPath": "C:\\Users\\KAPTAN\\Documents\\GitHub\\Todos_Api_Challenge\\ConsoleApp6\\ConsoleApp6.csproj",
       "packagesPath": "C:\\Users\\KAPTAN\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\KAPTAN\\source\\repos\\ConsoleApp1\\ConsoleApp6\\obj\\",
+      "outputPath": "C:\\Users\\KAPTAN\\Documents\\GitHub\\Todos_Api_Challenge\\ConsoleApp6\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\KAPTAN\\AppData\\Roaming\\NuGet\\NuGet.Config",

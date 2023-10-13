@@ -475,11 +475,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\KAPTAN\\source\\repos\\ConsoleApp1\\TodosApi\\TodosApi.csproj",
+      "projectUniqueName": "C:\\Users\\KAPTAN\\Documents\\GitHub\\Todos_Api_Challenge\\TodosApi\\TodosApi.csproj",
       "projectName": "TodosApi",
-      "projectPath": "C:\\Users\\KAPTAN\\source\\repos\\ConsoleApp1\\TodosApi\\TodosApi.csproj",
+      "projectPath": "C:\\Users\\KAPTAN\\Documents\\GitHub\\Todos_Api_Challenge\\TodosApi\\TodosApi.csproj",
       "packagesPath": "C:\\Users\\KAPTAN\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\KAPTAN\\source\\repos\\ConsoleApp1\\TodosApi\\obj\\",
+      "outputPath": "C:\\Users\\KAPTAN\\Documents\\GitHub\\Todos_Api_Challenge\\TodosApi\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\KAPTAN\\AppData\\Roaming\\NuGet\\NuGet.Config",
